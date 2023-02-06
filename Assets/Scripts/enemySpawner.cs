@@ -51,9 +51,9 @@ public class enemySpawner : MonoBehaviour
     void Update()
     {
 //Detects if player is in spawning radius before spawning enemy
-        active = GameObject.Find("activeRadius").GetComponent<spawnerActivation>().active;
+        //active = GameObject.Find("activeRadius").GetComponent<spawnerActivation>().active;
 
-        if(active == 1){
+        //if(active == 1){
             if(spawnCDR <= 0){
                 spawnCD = Random.Range(1, 10);
                 spawnCount = Random.Range(1, 4);
@@ -63,7 +63,7 @@ public class enemySpawner : MonoBehaviour
                         Instantiate(enemyPrefab, new Vector3(parentObject.position.x + Random.Range(-2f, 2), parentObject.position.y + Random.Range(-2f, 2), parentObject.position.z+ Random.Range(-2f, 2)), Quaternion.identity);
                     }
             }
-        }
+        //}
         spawnCD -= Time.deltaTime;
         spawnCDR = Mathf.CeilToInt(spawnCD);
         spawnCountR = Mathf.CeilToInt(spawnCount);

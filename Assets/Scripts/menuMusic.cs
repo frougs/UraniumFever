@@ -16,7 +16,7 @@ public class menuMusic : MonoBehaviour
     }
 
     private void Update() {
-        if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("SampleScene")){
+        if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level 1")){
             Destroy(this.gameObject);
         }
     }

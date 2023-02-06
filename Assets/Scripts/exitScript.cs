@@ -7,7 +7,8 @@ public class exitScript : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D other) {
         if(other.gameObject.tag == "Player" ){
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(3);
         }
+        
     }
 }

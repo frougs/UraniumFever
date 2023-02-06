@@ -121,7 +121,7 @@ public class playerController : MonoBehaviour
             audioSource.clip = playerDeath;
             audioSource.Play();
  
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(4);
         }
 //Deterimes which direction the player is facing
         float horizontalInput = Input.GetAxis("Horizontal");
@@ -423,7 +423,7 @@ public class playerController : MonoBehaviour
             Destroy(other.gameObject);
         }
 
-        if(other.gameObject.name == "wall"){
+        if(other.gameObject.tag == "door"){
             if(keyItem > 0 ){
                 miscSounds.clip = doorOpen;
                 miscSounds.Play();

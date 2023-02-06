@@ -737,7 +737,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Art: Thierry Folvilus, Max Freitas & Nathan Holmes'
+  m_text: 'Art: Thierry Florvilus, Max Freitas & Nathan Holmes'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4daac69f9439d6f4f9b4eb64fe322180, type: 2}
   m_sharedMaterial: {fileID: -4795718333155973350, guid: 4daac69f9439d6f4f9b4eb64fe322180, type: 2}

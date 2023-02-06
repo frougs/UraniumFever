@@ -19,7 +19,7 @@ public class menuManagement : MonoBehaviour
     }
 
     public void startPress(){
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 
     public void quitPress(){
@@ -28,7 +28,7 @@ public class menuManagement : MonoBehaviour
     }
 
     public void optionPress(){
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
 
     public void backPress(){
@@ -40,6 +40,6 @@ public class menuManagement : MonoBehaviour
     }
 
     public void quickPress(){
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 }

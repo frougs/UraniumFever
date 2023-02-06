@@ -15,7 +15,7 @@ public class spawnerActivation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        active = 0;
     }
 
 //Detects when player enters spawning radius
@@ -25,11 +25,7 @@ public class spawnerActivation : MonoBehaviour
         }
     }
 //Detects when player leaves spawning radius
-    private void OnTriggerExit2D(Collider2D other) {
-        if(other.gameObject.tag == "Player"){
-            active = 0;
-        }
-    }
+
 //Detects that the player stays in spawning
     private void OnTriggerStay2D(Collider2D other) {
         if(other.gameObject.tag == "Player"){
